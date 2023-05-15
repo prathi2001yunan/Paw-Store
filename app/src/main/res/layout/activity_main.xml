@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="376dp"
+        android:layout_height="265dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="21dp"
+        app:cardBackgroundColor="#D0045D6A"
+        app:cardCornerRadius="90dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="288dp">
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="318dp"
+                android:layout_height="60dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/simple"
+                android:drawableStart="@drawable/baseline_contacts_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="FIELD NAME"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="318dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="150dp"
+                android:background="@drawable/simple"
+                android:drawableStart="@drawable/baseline_password_24"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:hint="PASSWORD"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </FrameLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fram1"
+        android:layout_width="161dp"
+        android:layout_height="142dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="564dp"
+        android:background="@drawable/simple2">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="SAVE"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp">
+
+        </TextView>
+
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button1"
+        android:layout_width="147dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="21dp"
+        android:backgroundTint="#B7373533"
+
+        android:text="VIEW SAVED"
+        app:cornerRadius="40dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="199dp"
+        android:layout_height="143dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="102dp"
+        app:srcCompat="@drawable/baseline_lock_24" />
+
+
+</RelativeLayout>
